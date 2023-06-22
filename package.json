@@ -34,6 +34,7 @@
     "last 3 safari versions"
   ],
   "dependencies": {
-    "jwt-decode": "^3.1.2"
+    "jwt-decode": "^3.1.2",
+    "normalize.css": "^8.0.1"
   }
 }

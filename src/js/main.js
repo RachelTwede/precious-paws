@@ -1,3 +1,4 @@
-function toggleMenu(menuButton) {
-  menuButton.classList.toggle("change");
-}
+import { setMenuListener } from "/js/utilities.mjs";
+
+setMenuListener();
+

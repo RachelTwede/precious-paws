@@ -5,36 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Precious Paws | Home</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600;700&family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="/js/main.js" type="module"></script>
   </head>
   <body>
     <header id="header">
-      <a src="/index.html">
-        <img href="/images/site-logo.png" />
+      <a href="/index.html">
+        <img src="/images/site-logo.png" alt="Site logo" />
+      </a>
+      <a href="/index.html">
         <h1>Precious Paws Animal Shelter</h1>
       </a>
-      <div class="menu-icon" onclick="toggleMenu(this)">
+      <div id="menu-button">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
     </header>
-    <ul id="nav">
-      <li>About Us</li>
-      <li>Pet Care Resources</li>
-      <li>Adoptions</li>
-      <li>Schedule Visit</li>
+    <ul class="nav">
+      <a href="/about"><li>About Us</li></a>
+      <a href="/care"><li>Pet Care Resources</li></a>
+      <a href="/adopt"></a><li>Adoptions</li></a>
+      <a href="/visit"></a><li>Schedule Visit</li></a>
     </ul>
+    <img src="/images/dog-cat-cuddle.jpg"/>
     <main id="main">
-      <img />
       <section class="home-call-to-action">
-        <h1></h1>
-        <p></p>
-        <a></a>
+        <h1>Come and Find Your New Best Friend!</h1>
+        <p>Here at the Precious Paws Animal Shelter, we are dedicated to helping each
+          of the wonderful animals we host find a forever home. But we can't do that without you!
+          Sign up for a time to meet your favorite potential pets from our listings online. 
+        </p>
+        <a>Adopt Today</a>
       </section>
       <section class="home-summary"></section>
       <section class="home-basic-info"></section>
-      <section class="home-animal-care"></section>
+      <section class="home-animal-care">
+        <h2>Animal Care Resources</h2>
+        <p>Whether you're adopting or purchasing a new pet, it's important to know how to 
+          prepare, what to expect, and the best practices for taking care of your new pal. 
+          We've compiled a handy list of resources to help.
+        </p>
+        <img src="">
+        <a href="/care">See Resources List</a>
+      </section>
     </main>
     <footer id="footer">
       <p>
