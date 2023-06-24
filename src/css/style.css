@@ -39,8 +39,12 @@ main {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
+footer {
+  background-color: var(--primary-color);
+}
 section, footer {
   padding: 0.5rem 1rem;
+  margin-top: 1rem;
 }
 h1, h2, h3 {
   font-family: var(--font-headline);
@@ -96,9 +100,7 @@ button, .button {
   box-shadow: 0 0px 4px 4px var(--glow);
   bottom: -3px;
 }
-
-/* Utility styles */
-
+/* End General Styling */
 
 /* Header and Nav Menu */
 header {
@@ -175,7 +177,7 @@ header h1 {
 .nav li:active {
   background-color: var(--secondary-color);
 }
-/* End header/nav styles */
+/* End Header and Nav Styles */
 
 /* Homepage */
 .home-call-to-action {
@@ -192,7 +194,6 @@ header h1 {
 .home-basic-info {
   background-color: var(--tertiary-color);
   margin: 0 1rem;
-  /* color: var(--secondary-lighter); */
   color: white;
   box-shadow: 0 3px 5px 4px var(--shadow);
 }
@@ -202,12 +203,26 @@ header h1 {
 .home-basic-info p {
   font-weight: bold;
 }
-/* .home-basic-info figcaption {
-  color: white;
-} */
 .home-basic-info a {
   color: var(--dark-link-color);
 }
 .home-basic-info a:visited {
   color: var(--used-dark-link-color);
 }
+
+.resources-container {
+  position: relative;
+}
+.resources-container img {
+  filter: brightness(60%);
+}
+.resources-container .button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--secondary-color);
+  width: 60%;
+  text-align: center;
+}
+/* End homepage styling */
