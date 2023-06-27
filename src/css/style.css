@@ -144,7 +144,7 @@ header {
   padding: 0.5rem;
   background-color: white;
   position: relative;
-  z-index: 2;
+  z-index: 4;
 }
 header a {
   color: var(--near-black);
@@ -182,16 +182,31 @@ header h1 {
 
 .nav {
   list-style-type: none;
-  z-index: 1;
-  transform: translate(0, -420px);
+  z-index: 3;
+  transform: translate(0, -300px);
   transition: transform 1s ease;
   padding-left: 0;
   position: absolute;
   width: 100%;
   margin-top: 0;
+  box-shadow: 0 3px 5px 4px rgba(0, 0, 0, 0.6);
 }
 .visible {
   transform: translate(0, 0);
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: var(--shadow);
+}
+.darken {
+  display: block;
 }
 
 .nav li {
