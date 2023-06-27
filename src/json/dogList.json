@@ -1,0 +1,113 @@
+{
+  "category":"dogs",
+  "dogs":[
+    {
+      "id":1,
+      "name":"Atlas",
+      "age":"1 year, 2 months",
+      "gender":"M",
+      "personality": "Atlas is a very friendly guy and is really quick to warm up to people. He is very energetic and loving!",
+      "intakeDate":"2022-10-02T00:00:00.0z",
+      "photoURL":"/images/adopt-dog/atlas.jpg"
+    },
+    {
+      "id":2,
+      "name":"Lola",
+      "age":"About 5 years",
+      "gender":"F",
+      "personality": "Lola is an absolute sweetheart. She can be a little shy at first but once she gets to know you, she will warm right up and be your new best pal.",
+      "intakeDate":"2022-11-25T00:00:00.0z",
+      "photoURL":"/images/adopt-dog/lola.jpg"
+    },
+    {
+      "id":3,
+      "name":"Max",
+      "age":"2 years, 5 months",
+      "gender":"M",
+      "personality": "Max is a very independent dog, and is very calm and even-tempered. He is very intelligent and easy to work with, and is just waiting for his forever home!",
+      "intakeDate":"2022-11-25T00:00:00.0z",
+      "photoURL":"/images/adopt-dog/max.jpg"
+    },
+    {
+      "id":4,
+      "name":"Barkus",
+      "age":"5 months",
+      "gender":"M",
+      "personality": "Barkus is the happiest boy that you are ever going to meet. He is always so eager to grab our attention and is always ready to play!",
+      "intakeDate":"2022-11-25T00:00:00.0z",
+      "photoURL":"/images/adopt-dog/barkus.jpg"
+    },
+    {
+      "id":5,
+      "name":"Jellybean",
+      "age":"11 years",
+      "gender":"F",
+      "personality": "Jellybean might be one of our senior gals, but she is very strong and healthy and has no problem keeping up with anyone else. She is so resilient, and has gone through a couple surgeries, but she was so sweet and patient throughout the whole process and is now fully recovered.",
+      "intakeDate":"2021-06-10T00:00:00.0z",
+      "photoURL":"/images/adopt-dog/jellybean.jpg"
+    },
+    {
+      "id":6,
+      "name":"Tugs",
+      "age":"3 years, 8 months",
+      "gender":"F",
+      "personality": "Tugs is a huge cuddler. She loves people, and will be quick to shower any new friends with kisses. She gets along well with other dogs and has an enormous heart.",
+      "intakeDate":"2021-12-21T00:00:00.0z",
+      "photoURL":"/images/adopt-dog/tugs.jpg"
+    },
+    {
+      "id":7,
+      "name":"Waffle",
+      "age":"4 years, 4 months",
+      "gender":"M",
+      "personality": "Waffle is going to be the most loyal companion for the lucky person that decides to adopt her! While she is a little timid at first, she is so devoted and loving once she's familiar with you.",
+      "intakeDate":"2022-11-06T00:00:00.0z",
+      "photoURL":"/images/adopt-dog/waffle.jpg"
+    },
+    {
+      "id":8,
+      "name":"Dino",
+      "age":"6 years, 6 months",
+      "gender":"M",
+      "personality": "Dino is a chill, loyal companion with a gentle soul. He enjoys being one-on-one or in small groups with his favorite people.",
+      "intakeDate":"2022-01-23T00:00:00.0z",
+      "photoURL":"/images/adopt-dog/dino.jpg"
+    },
+    {
+      "id":9,
+      "name":"Bella",
+      "age":"2 years, 4 months",
+      "gender":"F",
+      "personality": "Bella loves to play with toys and is very excitable and full of energy. An ideal pal for someone who loves to have a lot of fun!",
+      "intakeDate":"2023-02-23T00:00:00.0z",
+      "photoURL":"/images/adopt-dog/bella.jpg"
+    },
+    {
+      "id":10,
+      "name":"Caper",
+      "age":"8 months",
+      "gender":"M",
+      "personality": "Caper is absolutely adorable. He is very attached to his stuffed toys and will even take them with him on his walks. He's a huge sweetheart and is very social.",
+      "intakeDate":"2023-05-06T00:00:00.0z",
+      "photoURL":"/images/adopt-dog/casper.jpg"
+    },
+    {
+      "id":11,
+      "name":"Banjo",
+      "age":"3 years, 3 months",
+      "gender":"F",
+      "personality": "Banjo loves people and is amazingly sweet and affectionate! She spent a while in a foster home, and she is really good with kids and other animals.",
+      "intakeDate":"2023-03-21T00:00:00.0z",
+      "photoURL":"/images/adopt-dog/banjo.jpg"
+    },
+    {
+      "id":12,
+      "name":"Fern",
+      "age":"1 year, 11 months",
+      "gender":"F",
+      "personality": "Fern is a very adventurous girl who is loads of fun. She is very active, and would be an excellent addition to a home that enjoys things like hiking or running.",
+      "intakeDate":"2023-05-14T00:00:00.0z",
+      "photoURL":"/images/adopt-dog/fern.jpg"
+    }
+  ]
+}
