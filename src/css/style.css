@@ -14,7 +14,8 @@
   --used-dark-link-color: #C190A3;
   --secondary-lighter: #f6c39c;
   --light-grey: #d0d0d0;
-  --shadow: rgba(0, 0, 0, 0.3);
+  --shadow: rgba(0, 0, 0, 0.4);
+  --dark-shadow: rgba(0, 0, 0, 0.6);
   --glow: rgba(255, 255, 255, 0.2);
   --med-grey: #363636;
   --near-black: #0f0f12;
@@ -98,13 +99,13 @@ button, .button {
   color: var(--near-black);
 }
 .button:hover {
-  bottom: 3px;
-  box-shadow: 0 4px 7px 6px rgba(0, 0, 0, 0.4);
-}
+  box-shadow: 0 4px 7px 6px var(--dark-shadow);
+  top: -3px;
+} 
 .button:active {
   color: #1d1d22;
   box-shadow: 0 0px 4px 4px var(--glow);
-  bottom: -3px;
+  top: 3px;
 }
 .img-container {
   position: relative;
@@ -119,8 +120,15 @@ button, .button {
   transform: translate(-50%, -50%);
   background-color: var(--secondary-color);
   width: 60%;
+  max-width: 300px;
   text-align: center;
   margin: 0;
+}
+.img-container .button:hover {
+  top: calc(50% - 3px)
+}
+.img-container .button:active {
+  top: calc(50% + 3px)
 }
 .img-container h1 {
   position: absolute;
@@ -132,7 +140,6 @@ button, .button {
   padding: 0.75rem 1.75rem;
   background-color: rgba(225, 107, 107, 0.7);
   border-radius: 6px;
-  white-space: nowrap;
 }
 /* End General Styling */
 
@@ -189,7 +196,7 @@ header h1 {
   position: absolute;
   width: 100%;
   margin-top: 0;
-  box-shadow: 0 3px 5px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 7px 5px var(--dark-shadow);
 }
 .visible {
   transform: translate(0, 0);
@@ -236,15 +243,12 @@ header h1 {
 .home-call-to-action .button {
   background-color: var(--secondary-color);
 }
-.home-call-to-action .button:active {
-  background-color: var(--secondary-lighter);
-}
 
-.home-basic-info {
+.home-basic-info, .about-visit {
   background-color: var(--tertiary-color);
   margin: 0 1rem;
   color: white;
-  box-shadow: 0 3px 5px 4px var(--shadow);
+  box-shadow: 3px 7px 5px var(--shadow);
 }
 .home-basic-info ul {
   margin-top: 0.5em;
@@ -257,4 +261,13 @@ header h1 {
 /* About Us Page Styling */
 .about-leadership .name {
   font-weight: bold;
+}
+
+.about-adoptions-link {
+  background-color: var(--secondary-color);
+  padding-bottom: 1rem;
+  box-shadow: 0 7px 5px var(--shadow);
+}
+.about-adoptions-link .button {
+  background-color: var(--primary-color);
 }
