@@ -39,13 +39,15 @@ body {
 main {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 footer {
   background-color: var(--primary-color);
+  margin-top: 1rem;
 }
 section, footer {
   padding: 0.5rem 1rem;
-  margin-top: 1rem;
 }
 h1, h2, h3 {
   font-family: var(--font-headline);
@@ -65,6 +67,7 @@ main ul {
   padding-left: 1.5em;
   padding-right: 0.5em;
 }
+
 img {
   max-width: 100%;
   display: block;
@@ -84,6 +87,7 @@ figcaption a {
 figcaption a:visited {
   color: var(--used-dark-link-color);
 }
+
 button, .button {
   color: var(--near-black);
   font-weight: bold;
@@ -107,6 +111,9 @@ button, .button {
   box-shadow: 0 0px 4px 4px var(--glow);
   top: 3px;
 }
+/* End General Styling */
+
+/* Image with button overlay styling */
 .img-container {
   position: relative;
 }
@@ -141,12 +148,12 @@ button, .button {
   background-color: rgba(225, 107, 107, 0.7);
   border-radius: 6px;
 }
-/* End General Styling */
+/*End image with button overlay styling */
 
 /* Header and Nav Menu */
 header {
   display: grid;
-  grid-template-columns: 20% auto 10%;
+  grid-template-columns: 20% auto max-content;
   align-items: center;
   padding: 0.5rem;
   background-color: white;
@@ -158,17 +165,17 @@ header a {
   text-decoration: none;
 }
 header h1 {
-  margin: 0 0.75rem;
+  margin: 0 calc(0.75rem - 5px) 0 0.75rem;
   font-size: var(--font-largest);
+  justify-self: start;
 }
 
 #menu-button {
   display: inline-block;
   cursor: pointer;
-  margin: 0 auto;
-  padding: 50% 0;
   width: 100%;
   text-align: end;
+  padding: 10px 5px;
 }
 .bar1, .bar2, .bar3 {
   width: 25px;
@@ -239,6 +246,7 @@ header h1 {
 .home-call-to-action {
   background-color: var(--primary-color);
   text-align: center;
+  padding-bottom: 1rem;
 }
 .home-call-to-action .button {
   background-color: var(--secondary-color);
@@ -270,4 +278,37 @@ header h1 {
 }
 .about-adoptions-link .button {
   background-color: var(--primary-color);
+}
+/* End About Us Styling */
+
+/* Adopt Page Styles */
+.adopt-links div {
+  margin-bottom: 1.5rem;
+  box-shadow: 3px 7px 5px var(--shadow);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.adopt-links a:last-child {
+  text-align: center;
+  display: block;
+  font-size: var(--font-large);
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+/* End Adopt Page Styles */
+
+/* Tablet View */
+@media only screen and (min-width: 500px) {
+  header img {
+    width: 90px;
+  }
+  header {
+    grid-template-columns: max-content auto max-content;
+  }
+}
+
+/* Desktop View */
+@media only screen and (min-width: 1000px) {
+
 }

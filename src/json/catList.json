@@ -1,122 +1,121 @@
 {
-    "category":"cats",
-    "cats":[
-      {
-        "id":13,
-        "name":"Felix",
-        "age":"6 years, 9 months",
-        "gender":"M",
-        "personality": "Felix is such a beautiful cat. He is very relaxed and friendly, and really enjoys getting pet.",
-        "intakeDate":"2022-09-05T00:00:00.0z",
-        "photoURL":"/images/adopt-cat/felix.jpg"
-      },
-      {
-        "id":14,
-        "name":"Annabelle",
-        "age":"2 years, 1 months",
-        "gender":"F",
-        "personality": "Annabelle is a sweet, independent lady who absolutely loves to play. She's not a lap cat, but she loves to be pet, especially in the spot just in front of her ears.",
-        "intakeDate":"2022-03-15T00:00:00.0z",
-        "photoURL":"/images/adopt-cat/annabelle.jpg"
-      },
-      {
-        "id":15,
-        "name":"Mr. Mittens",
-        "age":"3 years, 9 months",
-        "gender":"M",
-        "personality": "Mr. Mittens is an incredibly resilient boy who was rescued after being hit by a car. His tail had to be amputated, but he made a full recovery, and has a wise, loving demeanor.",
-        "intakeDate":"2022-09-12T00:00:00.0z",
-        "photoURL":"/images/adopt-cat/mittens.jpg"
-      },
-      {
-        "id":16,
-        "name":"Leo",
-        "age":"8 years, 6 months",
-        "gender":"M",
-        "personality": "Leo is a funny, sassy cat who will be your best friend once he gets to know someone. While he used to hiss occassionaly, he never showed any real aggression, and with a little patience, he will be a truly loyal companion.",
-        "intakeDate":"2022-11-20T00:00:00.0z",
-        "photoURL":"/images/adopt-cat/leo.jpg"
-      },
-      {
-        "id":17,
-        "name":"Holly",
-        "age":"7 years",
-        "gender":"F",
-        "personality": "Holly absolutely adores attention and loves being brushed and pet. She is super affectionate and loving, and will be a perfect fit for anyone who wants to snuggle!",
-        "intakeDate":"2022-12-23T00:00:00.0z",
-        "photoURL":"/images/adopt-cat/holly.jpg"
-      },
-      {
-        "id":18,
-        "name":"Ginger",
-        "age":"5 years, 1 month",
-        "gender":"F",
-        "personality": "Ginger is a very calm and independent cat who will be an easygoing companion. He loves quiet moments of relaxation where he can curl up in his favorite spots.",
-        "intakeDate":"2023-02-11T00:00:00.0z",
-        "photoURL":"/images/adopt-cat/ginger.jpg"
-      },
-      {
-        "id":19,
-        "name":"Ollie",
-        "age":"8 years, 4 months",
-        "gender":"M",
-        "personality": "Ollie is a distinguished, calm little gentleman. He is very well-behaved. He may take a bit to truly warm up to new people, but loves spending quiet time together with people he knows.",
-        "intakeDate":"2022-11-06T00:00:00.0z",
-        "photoURL":"/images/adopt-cat/ollie.jpg"
-      },
-      {
-        "id":20,
-        "name":"Kiwi",
-        "age":"7 years, 6 months",
-        "gender":"F",
-        "personality": "Kiwi is a spunky, curious gal who is very adaptable and who adjusts surprisingly quickly to new people and situations! She is a ton of fun, and loves to play.",
-        "intakeDate":"2023-27-03T00:00:00.0z",
-        "photoURL":"/images/adopt-cat/kiwi.jpg"
-      },
-      {
-        "id":21,
-        "name":"Cookie",
-        "age":"8 years, 1 months",
-        "gender":"F",
-        "personality": "Cookie is the cuddliest cat ever, and she loves pets and attention from her human companions. She is a great lap cat and loves to cuddle!",
-        "intakeDate":"2023-16-22T00:00:00.0z",
-        "photoURL":"/images/adopt-cat/cookie.jpg"
-      },
-      {
-        "id":22,
-        "name":"Athena",
-        "age":"1 year, 8 months",
-        "gender":"F",
-        "personality": "Athena is a sweet, gorgeous girl who was rescued along with her brother, Apollo. The two of them are bonded closely, and so we are requesting that they be adopted together.",
-        "intakeDate":"2023-03-04T00:00:00.0z",
-        "photoURL":"/images/adopt-cat/athena.jpg"
-      },
-      {
-        "id":23,
-        "name":"Apollo",
-        "age":"1 year, 8 months",
-        "gender":"M",
-        "personality": "Apollo is an adventurous, energetic boy who was rescued with his sister, Athena. The two of them are very attached to each other, so we are requesting that they be adopted together.",
-        "intakeDate":"2023-03-04T00:00:00.0z",
-        "photoURL":"/images/adopt-cat/apollo.jpg"
-      },
-      {
-        "id":24,
-        "name":"Lucky",
-        "age":"8 years, 3 months",
-        "gender":"M",
-        "personality": "Lucky charmed the entire staff from the moment he arrived. He is very affectionate and laid back, and warms up quickly to new people.",
-        "intakeDate":"2023-05-14T00:00:00.0z",
-        "photoURL":"/images/adopt-cat/lucky.jpg"
-      },
-      {
-        "id":25,
-        "name":"Patches",
-        "age":"4 years, 3 months",
-        "gender":"M",
-        "personality": "Patches has a heart of gold and is very easygoing. He is not picky with his food, and is sure to steal your heart with his playful antics!",
-        "intakeDate":"2023-06-19T00:00:00.0z",
-        "photoURL":"/images/adopt-cat/patches.jpg"
-      }
-    ]
-  }
+  "cats":[
+    {
+      "id":13,
+      "name":"Felix",
+      "age":"6 years, 9 months",
+      "gender":"M",
+      "personality": "Felix is such a beautiful cat. He is very relaxed and friendly, and really enjoys getting pet.",
+      "intakeDate":"2022-09-05T00:00:00.0z",
+      "photoURL":"/images/adopt-cat/felix.jpg"
+    },
+    {
+      "id":14,
+      "name":"Annabelle",
+      "age":"2 years, 1 months",
+      "gender":"F",
+      "personality": "Annabelle is a sweet, independent lady who absolutely loves to play. She's not a lap cat, but she loves to be pet, especially in the spot just in front of her ears.",
+      "intakeDate":"2022-03-15T00:00:00.0z",
+      "photoURL":"/images/adopt-cat/annabelle.jpg"
+    },
+    {
+      "id":15,
+      "name":"Mr. Mittens",
+      "age":"3 years, 9 months",
+      "gender":"M",
+      "personality": "Mr. Mittens is an incredibly resilient boy who was rescued after being hit by a car. His tail had to be amputated, but he made a full recovery, and has a wise, loving demeanor.",
+      "intakeDate":"2022-09-12T00:00:00.0z",
+      "photoURL":"/images/adopt-cat/mittens.jpg"
+    },
+    {
+      "id":16,
+      "name":"Leo",
+      "age":"8 years, 6 months",
+      "gender":"M",
+      "personality": "Leo is a funny, sassy cat who will be your best friend once he gets to know someone. While he used to hiss occassionaly, he never showed any real aggression, and with a little patience, he will be a truly loyal companion.",
+      "intakeDate":"2022-11-20T00:00:00.0z",
+      "photoURL":"/images/adopt-cat/leo.jpg"
+    },
+    {
+      "id":17,
+      "name":"Holly",
+      "age":"7 years",
+      "gender":"F",
+      "personality": "Holly absolutely adores attention and loves being brushed and pet. She is super affectionate and loving, and will be a perfect fit for anyone who wants to snuggle!",
+      "intakeDate":"2022-12-23T00:00:00.0z",
+      "photoURL":"/images/adopt-cat/holly.jpg"
+    },
+    {
+      "id":18,
+      "name":"Ginger",
+      "age":"5 years, 1 month",
+      "gender":"F",
+      "personality": "Ginger is a very calm and independent cat who will be an easygoing companion. He loves quiet moments of relaxation where he can curl up in his favorite spots.",
+      "intakeDate":"2023-02-11T00:00:00.0z",
+      "photoURL":"/images/adopt-cat/ginger.jpg"
+    },
+    {
+      "id":19,
+      "name":"Ollie",
+      "age":"8 years, 4 months",
+      "gender":"M",
+      "personality": "Ollie is a distinguished, calm little gentleman. He is very well-behaved. He may take a bit to truly warm up to new people, but loves spending quiet time together with people he knows.",
+      "intakeDate":"2022-11-06T00:00:00.0z",
+      "photoURL":"/images/adopt-cat/ollie.jpg"
+    },
+    {
+      "id":20,
+      "name":"Kiwi",
+      "age":"7 years, 6 months",
+      "gender":"F",
+      "personality": "Kiwi is a spunky, curious gal who is very adaptable and who adjusts surprisingly quickly to new people and situations! She is a ton of fun, and loves to play.",
+      "intakeDate":"2023-27-03T00:00:00.0z",
+      "photoURL":"/images/adopt-cat/kiwi.jpg"
+    },
+    {
+      "id":21,
+      "name":"Cookie",
+      "age":"8 years, 1 months",
+      "gender":"F",
+      "personality": "Cookie is the cuddliest cat ever, and she loves pets and attention from her human companions. She is a great lap cat and loves to cuddle!",
+      "intakeDate":"2023-16-22T00:00:00.0z",
+      "photoURL":"/images/adopt-cat/cookie.jpg"
+    },
+    {
+      "id":22,
+      "name":"Athena",
+      "age":"1 year, 8 months",
+      "gender":"F",
+      "personality": "Athena is a sweet, gorgeous girl who was rescued along with her brother, Apollo. The two of them are bonded closely, and so we are requesting that they be adopted together.",
+      "intakeDate":"2023-03-04T00:00:00.0z",
+      "photoURL":"/images/adopt-cat/athena.jpg"
+    },
+    {
+      "id":23,
+      "name":"Apollo",
+      "age":"1 year, 8 months",
+      "gender":"M",
+      "personality": "Apollo is an adventurous, energetic boy who was rescued with his sister, Athena. The two of them are very attached to each other, so we are requesting that they be adopted together.",
+      "intakeDate":"2023-03-04T00:00:00.0z",
+      "photoURL":"/images/adopt-cat/apollo.jpg"
+    },
+    {
+      "id":24,
+      "name":"Lucky",
+      "age":"8 years, 3 months",
+      "gender":"M",
+      "personality": "Lucky charmed the entire staff from the moment he arrived. He is very affectionate and laid back, and warms up quickly to new people.",
+      "intakeDate":"2023-05-14T00:00:00.0z",
+      "photoURL":"/images/adopt-cat/lucky.jpg"
+    },
+    {
+      "id":25,
+      "name":"Patches",
+      "age":"4 years, 3 months",
+      "gender":"M",
+      "personality": "Patches has a heart of gold and is very easygoing. He is not picky with his food, and is sure to steal your heart with his playful antics!",
+      "intakeDate":"2023-06-19T00:00:00.0z",
+      "photoURL":"/images/adopt-cat/patches.jpg"
+    }
+  ]
+}

@@ -1,19 +1,20 @@
-function setMenuListener() {
-  let parentElement = document.querySelector("header");
-  let navElement = document.querySelector(".nav");
-  const overlayElement = document.querySelector(".overlay");
-  parentElement.addEventListener("click", function(e) {
-    if(e.target && e.target.closest("#menu-button")) {
-      e.target.closest("#menu-button").classList.toggle("change");
-      navElement.classList.toggle("visible");
-      overlayElement.classList.toggle("darken");
-    }
-  });
+export function getURLParam(param) {
+  const queryString = window.location.search;
+  const urlParam = new URLSearchParams(queryString);
+  return urlParam.get(param);
+}
+
+export function renderListWithTemplate(templateFunction, insertionElement, list, position="afterbegin", clear = true) {
+  if(clear) {
+    insertionElement.innerHTML = "";
+  }
+  const htmlString = list.map(templateFunction);
+  insertionElement.insertAdjacentHTML(position, htmlString.join(""));
 }
 
 //why not just write the async function as the function itself?
 //why do we need to "return" it?
-function loadTemplate(path) {
+export function loadSnippet(path) {
   return async function() {
     const response = await fetch(path);
     if (response.ok) {
@@ -36,14 +37,27 @@ export async function renderWithTemplate(templateFunction, insertionElement, dat
   }
 }
 
+function setMenuListener() {
+  let parentElement = document.querySelector("header");
+  let navElement = document.querySelector(".nav");
+  const overlayElement = document.querySelector(".overlay");
+  parentElement.addEventListener("click", function(e) {
+    if(e.target && e.target.closest("#menu-button")) {
+      e.target.closest("#menu-button").classList.toggle("change");
+      navElement.classList.toggle("visible");
+      overlayElement.classList.toggle("darken");
+    }
+  });
+}
+
 export async function addHeaderNavFooter() {
   const headerElement = document.querySelector("header");
   const navElement = document.querySelector(".nav");
   const footerElement = document.querySelector("footer");
 
-  const headerFn = loadTemplate("/snippets/header.html");
-  const navFn = loadTemplate("/snippets/nav.html");
-  const footerFn = loadTemplate("/snippets/footer.html");
+  const headerFn = loadSnippet("/snippets/header.html");
+  const navFn = loadSnippet("/snippets/nav.html");
+  const footerFn = loadSnippet("/snippets/footer.html");
 
   renderWithTemplate(headerFn, headerElement);
   renderWithTemplate(navFn, navElement);
