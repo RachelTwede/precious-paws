@@ -21,6 +21,15 @@ export async function showAdoptPage(urlParameter) {
   if(!urlParameter) {
     const adoptFn = loadSnippet("/snippets/adopt-main.html");
     renderWithTemplate(adoptFn, insertionElement);
+  } else if(urlParameter == "other") {
+    const animalList = await getAnimalsByCategory(urlParameter);
+    const otherAnimals = animalList[urlParameter];
+    let subCategories = Object.keys(otherAnimals);
+    subCategories.forEach((subCategory) => {
+      console.log(otherAnimals[subCategory]);
+      renderListWithTemplate(animalListTemplate, insertionElement, otherAnimals[subCategory], "beforeend", false);
+    })
+
   } else {
     // Get list of animals from the model
     const animalList = await getAnimalsByCategory(urlParameter);
