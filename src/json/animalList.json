@@ -220,18 +220,19 @@
     },
     {
       "id":25,
-      "name":"Patches",
-      "age":"4 years, 3 months",
+      "name":"Dusky",
+      "age":"9 months",
       "gender":"M",
-      "personality": "Patches has a heart of gold and is very easygoing. He is not picky with his food, and is sure to steal your heart with his playful antics!",
+      "personality": "Dusky has a heart of gold and is very easygoing. He is not picky with his food, and is sure to steal your heart with his playful antics!",
       "intakeDate":"2023-06-19T00:00:00.0z",
-      "photoURL":"/images/adopt-list-cat/patches.jpg"
+      "photoURL":"/images/adopt-list-cat/dusky.jpg"
     }
   ],
   "other":{
     "rabbits":[
       {
         "id":26,
+        "category": "Rabbit",
         "name":"Cabbage",
         "age":"4 years, 2 months",
         "gender":"M",
@@ -241,6 +242,7 @@
       },
       {
         "id":27,
+        "category": "Rabbit",
         "name":"Stella",
         "age":"1 year, 1 month",
         "gender":"F",
@@ -250,6 +252,7 @@
       },
       {
         "id":28,
+        "category": "Rabbit",
         "name":"Clover",
         "age":"2 years, 8 months",
         "gender":"M",
@@ -261,6 +264,7 @@
     "reptiles":[
       {
         "id":29,
+        "category": "Reptile",
         "name":"Lizzy",
         "age":"8 years, 2 months",
         "gender":"F",
@@ -270,6 +274,7 @@
       },
       {
         "id":30,
+        "category": "Reptile",
         "name":"Albert",
         "age":"2 years, 5 months",
         "gender":"M",
@@ -281,6 +286,7 @@
     "rodents":[
       {
         "id":31,
+        "category": "Rodents",
         "name":"Madame Marbles",
         "age":"1 year, 2 months",
         "gender":"M",
@@ -290,6 +296,7 @@
       },
       {
         "id":32,
+        "category": "Rodents",
         "name":"Pixel",
         "age":"1 year, 2 months",
         "gender":"F",
@@ -301,6 +308,7 @@
     "birds":[
       {
         "id":33,
+        "category": "Birds",
         "name":"Storm",
         "age":"23 years, 11 months",
         "gender":"M",
