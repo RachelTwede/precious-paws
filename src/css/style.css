@@ -39,14 +39,18 @@ body {
 main {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  max-width: 1200px;
   margin: 0 auto;
 }
 footer {
   background-color: var(--primary-color);
   margin-top: 1rem;
 }
-section, footer {
+section {
+  max-width: 1000px;
+  padding: 0;
+  margin: 1rem;
+}
+footer {
   padding: 0.5rem 1rem;
 }
 h1, h2, h3 {
@@ -160,6 +164,9 @@ header {
   position: relative;
   z-index: 4;
 }
+header img {
+  width: 90px;
+}
 header a {
   color: var(--near-black);
   text-decoration: none;
@@ -246,15 +253,18 @@ header h1 {
 .home-call-to-action {
   background-color: var(--primary-color);
   text-align: center;
-  padding-bottom: 1rem;
+  padding: 1rem;
+  max-width: 100%;
+  margin: 0;
 }
 .home-call-to-action .button {
   background-color: var(--secondary-color);
 }
 
 .home-basic-info, .about-visit {
+  padding: 1rem;
   background-color: var(--tertiary-color);
-  margin: 0 1rem;
+  margin: 0 auto;
   color: white;
   box-shadow: 3px 7px 5px var(--shadow);
 }
@@ -273,8 +283,11 @@ header h1 {
 
 .about-adoptions-link {
   background-color: var(--secondary-color);
-  padding-bottom: 1rem;
+  padding: 1rem;
   box-shadow: 0 7px 5px var(--shadow);
+}
+.about-adoptions-link h2 {
+  margin-top: 0;
 }
 .about-adoptions-link .button {
   background-color: var(--primary-color);
@@ -282,11 +295,15 @@ header h1 {
 /* End About Us Styling */
 
 /* Adopt Page Styles */
+
 .adopt-links div {
   margin-bottom: 1.5rem;
   box-shadow: 3px 7px 5px var(--shadow);
   border-radius: 6px;
   overflow: hidden;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .adopt-links a:last-child {
   text-align: center;
@@ -299,16 +316,85 @@ header h1 {
 /* End Adopt Page Styles */
 
 /* Tablet View */
-@media only screen and (min-width: 500px) {
-  header img {
-    width: 90px;
-  }
+@media only screen and (min-width: 600px) {
+  /* Header */
   header {
     grid-template-columns: max-content auto max-content;
   }
+  /* End Header */
+
+  /* Adopt Page Styles*/
+  .adopt-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+  /* End Adopt Page Styles*/
 }
 
 /* Desktop View */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 900px) {
+  /* General Styling */
+  section {
+    margin: 2.5rem auto;
+  }
+  /* General Styling */
 
+  /* Header and Nav Styles*/
+  header {
+    padding: 1rem;
+  }
+  #menu-button {
+    display: none;
+  }
+  .nav {
+    transform: translate(0, 0);
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content max-content;
+    justify-content: end;
+    background-color: var(--primary-color);
+    align-items: center;
+  }
+  .nav {
+    margin-bottom: 0;
+  }
+  .nav a {
+    border-bottom: none;
+    border-left: 2px solid white;
+    text-align: center;
+  }
+  .nav li {
+    height: 100%;
+    background-color: transparent;
+  }
+  .nav li:hover {
+    background-color: var(--tertiary-color);
+    color: white;
+  }
+  .nav li:active {
+    background-color: var(--secondary-color);
+    color: var(--near-black);
+  }
+  .darken {
+    display: none;
+  }
+  /* End Nav Styles*/
+
+  /* Home */
+  .home-summary img {
+    float: left;
+    margin-right: 2rem;
+    width: 50%;
+    margin-bottom: 2.5rem;
+  }
+  .home-basic-info {
+    clear: both;
+  }
+  /* End Home */
+
+  /* Adopt Page Styles*/
+  .adopt-links {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /* End Adopt Page */
 }
