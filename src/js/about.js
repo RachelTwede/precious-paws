@@ -1,3 +1,3 @@
-import { addHeaderNavFooter } from "/js/utilities.mjs";
+import { addHeaderNavFooter } from "/js/utils.mjs";
 
 addHeaderNavFooter();

@@ -1,4 +1,4 @@
-import { renderWithTemplate, renderListWithTemplate, loadSnippet } from "/js/utilities.mjs";
+import { renderWithTemplate, renderListWithTemplate, loadSnippet } from "/js/utils.mjs";
 import { getAnimalsByCategory } from "./model.mjs";
 // Need to handle main dogs cats other
 

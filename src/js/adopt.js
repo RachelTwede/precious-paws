@@ -1,4 +1,4 @@
-import { getURLParam, addHeaderNavFooter } from "/js/utilities.mjs";
+import { getURLParam, addHeaderNavFooter } from "/js/utils.mjs";
 import { showAdoptPage } from "/js/adopt-details.mjs";
 
 const category = getURLParam("category");

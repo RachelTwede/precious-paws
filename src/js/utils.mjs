@@ -55,9 +55,9 @@ export async function addHeaderNavFooter() {
   const navElement = document.querySelector(".nav");
   const footerElement = document.querySelector("footer");
 
-  const headerFn = loadSnippet("/snippets/header.html");
-  const navFn = loadSnippet("/snippets/nav.html");
-  const footerFn = loadSnippet("/snippets/footer.html");
+  const headerFn = loadSnippet("./snippets/header.html");
+  const navFn = loadSnippet("./snippets/nav.html");
+  const footerFn = loadSnippet("./snippets/footer.html");
 
   renderWithTemplate(headerFn, headerElement);
   renderWithTemplate(navFn, navElement);
