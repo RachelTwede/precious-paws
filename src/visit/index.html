@@ -14,29 +14,43 @@
     <header></header>
     <ul class="nav"></ul>
     <main>
-      <div class="img-container">
+      <div class="hero-img img-container">
         <img src="/images/visit.jpg">
         <h1>Schedule Visit</h1>
       </div>
-      <p>Schedule a visit to get to know the potential new pets you've selected.</p>
-      <p>All fields required.</p>
-      <form>
-        <fieldset>
-          <legend>Personal Information</legend>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" />
-  
-        </fieldset>
-        <div class="your-choices">
-  
+      <section>
+        <div>
+          <p>Schedule a visit to get to know the potential pets you've selected on our "Adoptions" page!</p>
+          <p>Picking candidates beforehand is recommended, but not required.</p>
         </div>
-        <fieldset>
-          <legend>Appointment Time</legend>
-        </fieldset>
-        <h2></h2>
-        <p></p>
-        <submit>Schedule Visit</submit>
-      </form>
+      </section>
+      <section>
+        <div>
+          <form>
+            <p>Required fields are marked with an asterisk*</p>
+            <fieldset>
+              <legend>Personal Information</legend>
+              <label for="name">Name:*</label>
+              <input type="text" id="name" name="name">
+      
+            </fieldset>
+            <div class="your-choices"></div>
+            <fieldset>
+              <legend>Appointment Time</legend>
+            </fieldset>
+            <h2>Your Visit</h2>
+            <p>
+              If you haven't pre-selected the animals you want to meet, or if you change your mind,
+              your visit will start with a walkthrough of the kennels to choose which pet(s) you want to 
+              visit with. 
+            </p>
+            <p>
+              Please make sure to bring your id and a form of payment!
+            </p>
+            <submit class="button">Schedule Visit</submit>
+          </form>
+        </div>
+      </section>
     </main>
     <footer></footer>
     <div class="overlay"></div>
