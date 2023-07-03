@@ -5,15 +5,15 @@
   --font-headline: "Alkatra", Georgia, serif;
   --font-body: "DM Sans", Verdana, sans-serif;
   /* colors */
-  --primary-color: #E16B6B;
+  --primary-color: #e16b6b;
   --secondary-color: #f2b988;
   /* --tertiary-color: #2E3D61; */
-  --tertiary-color: #25324F;
-  --link-color: #2C4A82;
-  --used-link-color: #8B5072;
+  --tertiary-color: #25324f;
+  --link-color: #2c4a82;
+  --used-link-color: #8b5072;
   /* --dark-link-color: #6396D2; */
-  --dark-link-color: #6BA2E1;
-  --used-dark-link-color: #C190A3;
+  --dark-link-color: #6ba2e1;
+  --used-dark-link-color: #c190a3;
   --secondary-lighter: #f6c39c;
   --light-grey: #d0d0d0;
   --shadow: rgba(0, 0, 0, 0.4);
@@ -30,7 +30,9 @@
 }
 
 /* General Styling */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 body {
@@ -50,13 +52,15 @@ section {
   padding: 0;
   margin: 0;
 }
-section>div {
+section > div {
   margin: 1.5rem 1rem;
 }
 footer {
   padding: 0.5rem 1rem;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-headline);
   margin: 0.5em 0 0.2em 0;
 }
@@ -98,7 +102,8 @@ figcaption a:visited {
   color: var(--used-dark-link-color);
 }
 
-button, .button {
+button,
+.button {
   color: var(--near-black);
   font-weight: bold;
   padding: 0.75rem 1rem;
@@ -115,7 +120,7 @@ button, .button {
 .button:hover {
   box-shadow: 0 4px 7px 6px var(--dark-shadow);
   top: -3px;
-} 
+}
 .button:active {
   color: #1d1d22;
   box-shadow: 0 0px 4px 4px var(--glow);
@@ -145,10 +150,10 @@ button, .button {
   margin: 0;
 }
 .img-container .button:hover {
-  top: calc(50% - 3px)
+  top: calc(50% - 3px);
 }
 .img-container .button:active {
-  top: calc(50% + 3px)
+  top: calc(50% + 3px);
 }
 .img-container h1 {
   position: absolute;
@@ -196,7 +201,9 @@ header h1 {
   text-align: end;
   padding: 10px 5px;
 }
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 25px;
   height: 4px;
   background-color: var(--near-black);
@@ -270,7 +277,7 @@ header h1 {
   margin: 0;
   box-shadow: 3px 7px 5px var(--shadow);
 }
-.home-call-to-action>div {
+.home-call-to-action > div {
   margin: 0;
 }
 .home-call-to-action h1 {
@@ -280,14 +287,16 @@ header h1 {
   background-color: var(--secondary-color);
 }
 
-.home-basic-info, .about-visit {
+.home-basic-info,
+.about-visit {
   padding: 1rem;
   background-color: var(--tertiary-color);
   margin: 0 auto;
   color: white;
   box-shadow: 3px 7px 5px var(--shadow);
 }
-.home-basic-info>div, .about-visit>div {
+.home-basic-info > div,
+.about-visit > div {
   margin: 0;
 }
 .home-basic-info ul {
@@ -296,7 +305,6 @@ header h1 {
 .home-basic-info p {
   font-weight: bold;
 }
-
 /* End homepage styling */
 
 /* About Us Page Styling */
@@ -341,7 +349,7 @@ header h1 {
   background-color: var(--tertiary-color);
   color: white;
   padding-top: 1rem;
-  padding-bottom: 1rem; 
+  padding-bottom: 1rem;
 }
 .care-general a {
   color: var(--dark-link-color);
@@ -354,13 +362,13 @@ header h1 {
 /* Tablet View */
 @media only screen and (min-width: 550px) {
   /* General Styles */
-  section>div {
+  section > div {
     margin: 1.5rem 2rem;
   }
   section img {
     width: 80%;
     margin: 0 auto;
-  } 
+  }
   section figure {
     width: 400px;
   }
@@ -379,7 +387,8 @@ header h1 {
   }
 
   /* Home Styles*/
-  .home-basic-info, .about-visit {
+  .home-basic-info,
+  .about-visit {
     padding: 1rem 2rem;
   }
   .tall-img {
@@ -412,7 +421,7 @@ header h1 {
   section {
     margin: 2.5rem auto;
   }
-  
+
   /* Header and Nav Styles*/
   header {
     padding: 1rem;
@@ -452,7 +461,7 @@ header h1 {
     display: none;
   }
   .hero-img {
-    background-color: #1c2333; 
+    background-color: #1c2333;
   }
   .hero-img img {
     width: 1200px;
@@ -467,18 +476,20 @@ header h1 {
     width: 50%;
     margin-bottom: 2.5rem;
   }
-  .home-basic-info, .about-visit {
+  .home-basic-info,
+  .about-visit {
     clear: both;
     padding: 0 2rem;
     background-color: transparent;
     box-shadow: none;
   }
-  .home-basic-info>div, .about-visit>div {
+  .home-basic-info > div,
+  .about-visit > div {
     padding: 1rem 2rem;
     background-color: var(--tertiary-color);
     box-shadow: 3px 7px 5px var(--shadow);
   }
-  .home-animal-care>div {
+  .home-animal-care > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 32.4px auto;
@@ -487,7 +498,8 @@ header h1 {
   .home-animal-care h2 {
     margin: 0;
   }
-  .home-animal-care h2, .home-animal-care p {
+  .home-animal-care h2,
+  .home-animal-care p {
     grid-column: 1 / 2;
     text-align: end;
   }
