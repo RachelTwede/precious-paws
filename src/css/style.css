@@ -15,7 +15,8 @@
   --dark-link-color: #6BA2E1;
   --used-dark-link-color: #C190A3;
   --secondary-lighter: #f6c39c;
-  --light-grey: #d0d0d0;
+  --cream: #F8EAA5;
+  --light-grey: #e4d8d3;
   --shadow: rgba(0, 0, 0, 0.4);
   --dark-shadow: rgba(0, 0, 0, 0.6);
   --glow: rgba(255, 255, 255, 0.2);
@@ -112,11 +113,11 @@ button, .button {
 .button:visited {
   color: var(--near-black);
 }
-.button:hover {
+.button:hover, button:hover {
   box-shadow: 0 4px 7px 6px var(--dark-shadow);
   top: -3px;
 } 
-.button:active {
+.button:active, button:active {
   color: #1d1d22;
   box-shadow: 0 0px 4px 4px var(--glow);
   top: 3px;
@@ -318,7 +319,7 @@ header h1 {
 /* End About Us Styling */
 
 /* Adopt Page Styles */
-.adopt-links div {
+.adopt-card {
   margin-bottom: 1.5rem;
   box-shadow: 3px 7px 5px var(--shadow);
   border-radius: 6px;
@@ -326,13 +327,25 @@ header h1 {
   max-width: 450px;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--light-grey);
 }
-.adopt-links a:last-child {
+.adopt-card a:last-child {
   text-align: center;
   display: block;
   font-size: var(--font-large);
+  font-weight: bold;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+}
+.adopt-card h2, .adopt-card p {
+  margin-left: 1rem;
+}
+.adopt-card button {
+  margin: 1.5rem 1rem;
+  display: block;
+  background-color: var(--secondary-color);
+  width: calc(100% - 2rem);
+  border: none;
 }
 /* End Adopt Page Styles */
 
@@ -390,12 +403,12 @@ header h1 {
   }
 
   /* Adopt Page Styles*/
-  .adopt-links {
+  .adopt-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1rem;
   }
-  .adopt-links img {
+  .adopt-grid img {
     margin: 0;
     width: 100%;
   }
@@ -502,7 +515,7 @@ header h1 {
   /* End Home */
 
   /* Adopt Page Styles*/
-  .adopt-links {
+  .adopt-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
   /* End Adopt Page */

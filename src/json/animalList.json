@@ -286,7 +286,7 @@
     "rodents":[
       {
         "id":31,
-        "category": "Rodents",
+        "category": "Rodent",
         "name":"Madame Marbles",
         "age":"1 year, 2 months",
         "gender":"M",
@@ -296,7 +296,7 @@
       },
       {
         "id":32,
-        "category": "Rodents",
+        "category": "Rodent",
         "name":"Pixel",
         "age":"1 year, 2 months",
         "gender":"F",
@@ -308,7 +308,7 @@
     "birds":[
       {
         "id":33,
-        "category": "Birds",
+        "category": "Bird",
         "name":"Storm",
         "age":"23 years, 11 months",
         "gender":"M",
