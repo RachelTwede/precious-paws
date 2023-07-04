@@ -1,4 +1,4 @@
-import { renderWithTemplate, renderListWithTemplate, loadSnippet } from "/js/utilities.mjs";
+import { renderWithTemplate, renderListWithTemplate, loadSnippet, saveToLocalStorage, readFromLocalStorage } from "/js/utilities.mjs";
 import { getAnimalsByCategory } from "./model.mjs";
 
 function animalListTemplate(animal) {
@@ -10,11 +10,34 @@ function animalListTemplate(animal) {
   }
   htmlString +=  `<p>Age: ${animal.age}</p>`
   htmlString +=  `<p>Gender: ${animal.gender}</p>`
-  htmlString += `<button>Save for Visit</button>`;
+  htmlString += `<button id="${animal.id}">Save for Visit</button>`;
   htmlString += "</div>";
   return htmlString;
 }
 
+function saveFavorite(e) {
+  let favoriteID = e.target.id;
+  let favoritesList = readFromLocalStorage("precious-paws-animals") || [];
+  if (!Array.isArray(favoritesList)) {
+    favoritesList = [favoritesList];
+  }
+  
+  if (favoritesList && !favoritesList.includes(favoriteID)) {
+    favoritesList.push(favoriteID);
+  } else if(!favoritesList) {
+    favoritesList = [favoriteID];
+  }
+  saveToLocalStorage("precious-paws-animals", favoritesList);
+}
+
+function setFavoriteButtonListener() {
+  const buttons = document.querySelectorAll(".adopt-card button");
+  Array.from(buttons).map((button) => {
+    button.addEventListener("click", saveFavorite)
+  })
+}
+
+// The main function for the page
 export async function showAdoptPage(urlParameter) {
   // Get parent elements
   let insertionElement = document.querySelector(".adopt-grid");
@@ -37,6 +60,9 @@ export async function showAdoptPage(urlParameter) {
     const animalList = await getAnimalsByCategory(urlParameter);
     renderListWithTemplate(animalListTemplate, insertionElement, animalList[urlParameter]);
   }
+
+  // Add event listeners for buttons
+  setFavoriteButtonListener();
 }
 
 

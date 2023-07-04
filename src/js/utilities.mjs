@@ -4,14 +4,6 @@ export function getURLParam(param) {
   return urlParam.get(param);
 }
 
-export function renderListWithTemplate(templateFunction, insertionElement, list, position="afterbegin", clear = true) {
-  if(clear) {
-    insertionElement.innerHTML = "";
-  }
-  const htmlString = list.map(templateFunction);
-  insertionElement.insertAdjacentHTML(position, htmlString.join(""));
-}
-
 //why not just write the async function as the function itself?
 //why do we need to "return" it?
 export function loadSnippet(path) {
@@ -35,6 +27,14 @@ export async function renderWithTemplate(templateFunction, insertionElement, dat
   if(callback) {
     callback(data);
   }
+}
+
+export function renderListWithTemplate(templateFunction, insertionElement, list, position="afterbegin", clear = true) {
+  if(clear) {
+    insertionElement.innerHTML = "";
+  }
+  const htmlString = list.map(templateFunction);
+  insertionElement.insertAdjacentHTML(position, htmlString.join(""));
 }
 
 function setMenuListener() {
@@ -64,4 +64,12 @@ export async function addHeaderNavFooter() {
   renderWithTemplate(footerFn, footerElement);
 
   setMenuListener();
+}
+
+export function saveToLocalStorage(key, data) {
+  localStorage.setItem(key, JSON.stringify(data));
+}
+
+export function readFromLocalStorage(key) {
+  return JSON.parse(localStorage.getItem(key));
 }
