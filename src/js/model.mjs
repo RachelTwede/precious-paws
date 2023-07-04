@@ -1,6 +1,6 @@
 // Use me for interacting with the JSON
 
-export async function getAnimalsByCategory(category) {
+export async function getAnimalListJSON(category) {
   const response = await fetch(`/json/animalList.json`);
   // let json = response.json();
   // console.log(json[category]);
