@@ -16,8 +16,6 @@ export function loadSnippet(path) {
   };
 }
 
-//what's the data parameter for, again? especially when passed to the templateFunction?
-//also, do I need callback?
 export async function renderWithTemplate(templateFunction, insertionElement, data, callback, position = "afterbegin", clear = true) {
   if(clear) {
     insertionElement.innerHTML = "";
@@ -72,4 +70,14 @@ export function saveToLocalStorage(key, data) {
 
 export function readFromLocalStorage(key) {
   return JSON.parse(localStorage.getItem(key));
+}
+
+export function joinArraysFromJSON(fullJSON) {
+  let animalsArray = fullJSON["dogs"];
+  animalsArray = animalsArray.concat(fullJSON["cats"]);
+  let otherKeys = Object.keys(fullJSON["other"]);
+  otherKeys.forEach((key) => {
+    animalsArray = animalsArray.concat(fullJSON.other[key]);
+  })
+  return animalsArray;
 }

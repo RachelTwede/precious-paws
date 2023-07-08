@@ -58,7 +58,7 @@ function setFavoriteButtonListener() {
 }
 
 // The main function for the page
-export async function showAdoptPage(urlParameter) {
+export async function buildAdoptPage(urlParameter) {
   // Get parent elements
   let introElement = document.querySelector(".adopt-intro");
   let listElement = document.querySelector(".adopt-grid");
@@ -69,7 +69,7 @@ export async function showAdoptPage(urlParameter) {
     renderWithTemplate(adoptFn, listElement);
   //Set page content for "other" category
   } else if(urlParameter == "other") {
-    const animalList = await getAnimalListJSON(urlParameter);
+    const animalList = await getAnimalListJSON();
     const otherAnimals = animalList[urlParameter];
     let subCategories = Object.keys(otherAnimals);
     subCategories.forEach((subCategory) => {
@@ -79,7 +79,7 @@ export async function showAdoptPage(urlParameter) {
   //Set page content for cats/dogs
   } else {
     // Get list of animals from the model
-    const animalList = await getAnimalListJSON(urlParameter);
+    const animalList = await getAnimalListJSON();
     renderListWithTemplate(animalListTemplate, listElement, animalList[urlParameter]);
     renderWithTemplate(adoptIntroTemplate, introElement, `Adoptable ${urlParameter}`);
   }
