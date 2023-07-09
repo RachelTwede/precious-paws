@@ -355,6 +355,10 @@ header h1 {
   padding-top: 1rem;
   padding-bottom: 1rem; 
 }
+.care-general div {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 .care-general a {
   color: var(--dark-link-color);
 }
@@ -481,6 +485,12 @@ form .button {
   .adopt-grid img {
     margin: 0;
     width: 100%;
+  }
+
+  /* Care page styles */
+  .care-general {
+    padding: 1.5rem;
+    padding: 1.5rem;
   }
 
   /* Footer */
