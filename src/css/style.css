@@ -11,7 +11,6 @@
   --tertiary-color: #25324F;
   --link-color: #2C4A82;
   --used-link-color: #8B5072;
-  /* --dark-link-color: #6396D2; */
   --dark-link-color: #6BA2E1;
   --used-dark-link-color: #C190A3;
   --secondary-lighter: #f6c39c;
@@ -356,6 +355,10 @@ header h1 {
   padding-top: 1rem;
   padding-bottom: 1rem; 
 }
+.care-general div {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 .care-general a {
   color: var(--dark-link-color);
 }
@@ -363,6 +366,77 @@ header h1 {
   color: var(--used-dark-link-color);
 }
 /* End Animal Care Page Styles */
+
+/* Visit Us Page Styles */
+fieldset {
+  background-color: var(--tertiary-color);
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+legend {
+  background-color: #1c2333;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin: 0 auto;
+}
+input {
+  border: solid 2px #1c2333;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  padding: 0.25rem;
+}
+input[type="radio"] {
+  width: auto;
+}
+.form-instructions {
+  color: var(--tertiary-color);
+  font-weight: bold;
+}
+
+.your-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;;
+  padding: 0.5rem;
+  padding-bottom: 1.5rem;
+  color: var(--near-black);
+}
+.your-choices img {
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+.your-choices div {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+.your-choices legend {
+  color: white;
+}
+.your-choices p {
+  margin: 0.3rem 0;
+  font-size: 16px;
+}
+.your-choices p:first-of-type {
+  font-weight: bold;
+}
+
+.your-visit {
+  text-align: center;
+}
+form .button {
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+  display: block;
+  width: 70%;
+  text-align: center;
+}
+/* End Visit Us Page Styles */
+
 
 /* Tablet View */
 @media only screen and (min-width: 550px) {
@@ -411,6 +485,12 @@ header h1 {
   .adopt-grid img {
     margin: 0;
     width: 100%;
+  }
+
+  /* Care page styles */
+  .care-general {
+    padding: 1.5rem;
+    padding: 1.5rem;
   }
 
   /* Footer */
@@ -503,6 +583,9 @@ header h1 {
   .home-animal-care h2, .home-animal-care p {
     grid-column: 1 / 2;
     text-align: end;
+  }
+  h2 {
+    font-size: 1.8em;
   }
   .home-animal-care .img-container {
     grid-column: 2 / 3;

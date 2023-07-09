@@ -1,9 +1,13 @@
-// Use me for interacting with the JSON
+// Use this file for interacting with the JSON and external APIs
 
-export async function getAnimalsByCategory(category) {
+export async function getAnimalListJSON() {
   const response = await fetch(`/json/animalList.json`);
-  // let json = response.json();
-  // console.log(json[category]);
-  // return json[category];
   return response.json();
 }
+
+export async function getAnimalFactFromAPI(url) {
+  const response = await fetch(url);
+  return response.json();
+}
+
+

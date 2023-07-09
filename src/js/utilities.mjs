@@ -4,14 +4,6 @@ export function getURLParam(param) {
   return urlParam.get(param);
 }
 
-export function renderListWithTemplate(templateFunction, insertionElement, list, position="afterbegin", clear = true) {
-  if(clear) {
-    insertionElement.innerHTML = "";
-  }
-  const htmlString = list.map(templateFunction);
-  insertionElement.insertAdjacentHTML(position, htmlString.join(""));
-}
-
 //why not just write the async function as the function itself?
 //why do we need to "return" it?
 export function loadSnippet(path) {
@@ -24,8 +16,6 @@ export function loadSnippet(path) {
   };
 }
 
-//what's the data parameter for, again? especially when passed to the templateFunction?
-//also, do I need callback?
 export async function renderWithTemplate(templateFunction, insertionElement, data, callback, position = "afterbegin", clear = true) {
   if(clear) {
     insertionElement.innerHTML = "";
@@ -35,6 +25,14 @@ export async function renderWithTemplate(templateFunction, insertionElement, dat
   if(callback) {
     callback(data);
   }
+}
+
+export function renderListWithTemplate(templateFunction, insertionElement, list, position="afterbegin", clear = true) {
+  if(clear) {
+    insertionElement.innerHTML = "";
+  }
+  const htmlString = list.map(templateFunction);
+  insertionElement.insertAdjacentHTML(position, htmlString.join(""));
 }
 
 function setMenuListener() {
@@ -64,4 +62,22 @@ export async function addHeaderNavFooter() {
   renderWithTemplate(footerFn, footerElement);
 
   setMenuListener();
+}
+
+export function saveToLocalStorage(key, data) {
+  localStorage.setItem(key, JSON.stringify(data));
+}
+
+export function readFromLocalStorage(key) {
+  return JSON.parse(localStorage.getItem(key));
+}
+
+export function joinArraysFromJSON(fullJSON) {
+  let animalsArray = fullJSON["dogs"];
+  animalsArray = animalsArray.concat(fullJSON["cats"]);
+  let otherKeys = Object.keys(fullJSON["other"]);
+  otherKeys.forEach((key) => {
+    animalsArray = animalsArray.concat(fullJSON.other[key]);
+  })
+  return animalsArray;
 }
