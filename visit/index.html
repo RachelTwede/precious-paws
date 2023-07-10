@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precious Paws | Schedule Visit</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;600;700&family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="/js/visit.js" type="module"></script>
+  </head>
+  <body>
+    <header></header>
+    <ul class="nav"></ul>
+    <main>
+      <div class="hero-img img-container">
+        <img src="/images/visit.jpg">
+        <h1>Schedule Visit</h1>
+      </div>
+      <section>
+        <div>
+          <p>Schedule a visit to get to know the potential pets you've selected on our "Adoptions" page!</p>
+          <p>Picking candidates beforehand is recommended, but not required.</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <form>
+            <p class="form-instructions">Required fields are marked with an asterisk*</p>
+            <fieldset>
+              <legend>Personal Information</legend>
+              <label for="name">Name:*</label>
+              <input type="text" id="name" name="name">
+              <label for="phone">Phone:*</label>
+              <input type="tel" id="phone" name="phone">
+              <label for="email">Email:*</label>
+              <input type="email" id="email" name="email">
+              <p>Preferred contact method:</p>
+              <input type="radio" id="prefer-phone" name="contact" value="phone">
+              <label for="prefer-phone">Phone</label><br>
+              <input type="radio" id="prefer-email" name="contact" value="email">
+              <label for="prefer-email">Email</label><br>
+              <input type="radio" id="prefer-either" name="contact" value="either">
+              <label for="prefer-either">No Preference</label><br>
+            </fieldset>
+            <fieldset class="your-choices">
+              <legend>Animals to Meet</legend>
+            </fieldset>
+            <fieldset>
+              <legend>Appointment Time</legend>
+              <label for="date">Date:*</label>
+              <input type="date" id="date" name="date">
+              <label for="time">Time:*</label>
+              <input type="time" id="time" name="time">
+            </fieldset>
+            <div class="your-visit">
+              <h2 >Your Visit</h2>
+              <p>
+                If you haven't pre-selected the animals you want to meet, or if you change your mind,
+                your visit will start with a walkthrough of the kennels to choose which pet(s) you want to 
+                visit with. 
+              </p>
+              <p>
+                Please make sure to bring your id and a form of payment!
+              </p>
+            </div>
+            <submit class="button">Schedule Visit</submit>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <div class="overlay"></div>
+  </body>
+</html>

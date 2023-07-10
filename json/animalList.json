@@ -1,0 +1,321 @@
+{
+  "dogs":[
+    {
+      "id":1,
+      "name":"Atlas",
+      "age":"3 months",
+      "gender":"M",
+      "personality": "Atlas is a an adorable, friendly little pup and is really quick to warm up to people. He is very energetic and loving!",
+      "intakeDate":"2023-05-16T00:00:00.0z",
+      "photoURL":"/images/adopt-list-dog/atlas.jpg"
+    },
+    {
+      "id":2,
+      "name":"Lola",
+      "age":"About 5 years",
+      "gender":"F",
+      "personality": "Lola is an absolute sweetheart. She can be a little shy at first but once she gets to know you, she will warm right up and be your new best pal.",
+      "intakeDate":"2022-11-25T00:00:00.0z",
+      "photoURL":"/images/adopt-list-dog/lola.jpg"
+    },
+    {
+      "id":3,
+      "name":"Max",
+      "age":"2 years, 5 months",
+      "gender":"M",
+      "personality": "Max is a very independent dog, and is very calm and even-tempered. He is very intelligent and easy to work with, and is just waiting for his forever home!",
+      "intakeDate":"2022-11-25T00:00:00.0z",
+      "photoURL":"/images/adopt-list-dog/max.jpg"
+    },
+    {
+      "id":4,
+      "name":"Barkus",
+      "age":"5 months",
+      "gender":"M",
+      "personality": "Barkus is the happiest boy that you are ever going to meet. He is always so eager to grab our attention and is always ready to play!",
+      "intakeDate":"2022-11-25T00:00:00.0z",
+      "photoURL":"/images/adopt-list-dog/barkus.jpg"
+    },
+    {
+      "id":5,
+      "name":"Jellybean",
+      "age":"11 years",
+      "gender":"F",
+      "personality": "Jellybean might be one of our senior gals, but she is very strong and healthy and has no problem keeping up with anyone else. She is so resilient, and has gone through a couple surgeries, but she was so sweet and patient throughout the whole process and is now fully recovered.",
+      "intakeDate":"2021-06-10T00:00:00.0z",
+      "photoURL":"/images/adopt-list-dog/jellybean.jpg"
+    },
+    {
+      "id":6,
+      "name":"Tugs",
+      "age":"3 years, 8 months",
+      "gender":"F",
+      "personality": "Tugs is a huge cuddler. She loves people, and will be quick to shower any new friends with kisses. She gets along well with other dogs and has an enormous heart.",
+      "intakeDate":"2021-12-21T00:00:00.0z",
+      "photoURL":"/images/adopt-list-dog/tugs.jpg"
+    },
+    {
+      "id":7,
+      "name":"Waffle",
+      "age":"4 years, 4 months",
+      "gender":"M",
+      "personality": "Waffle is going to be the most loyal companion for the lucky person that decides to adopt her! While she is a little timid at first, she is so devoted and loving once she's familiar with you.",
+      "intakeDate":"2022-11-06T00:00:00.0z",
+      "photoURL":"/images/adopt-list-dog/waffle.jpg"
+    },
+    {
+      "id":8,
+      "name":"Dino",
+      "age":"6 years, 6 months",
+      "gender":"M",
+      "personality": "Dino is a chill, loyal companion with a gentle soul. He enjoys being one-on-one or in small groups with his favorite people.",
+      "intakeDate":"2022-01-23T00:00:00.0z",
+      "photoURL":"/images/adopt-list-dog/dino.jpg"
+    },
+    {
+      "id":9,
+      "name":"Bella",
+      "age":"2 years, 4 months",
+      "gender":"F",
+      "personality": "Bella loves to play with toys and is very excitable and full of energy. An ideal pal for someone who loves to have a lot of fun!",
+      "intakeDate":"2023-02-23T00:00:00.0z",
+      "photoURL":"/images/adopt-list-dog/bella.jpg"
+    },
+    {
+      "id":10,
+      "name":"Caper",
+      "age":"8 months",
+      "gender":"M",
+      "personality": "Caper is absolutely adorable. He is very attached to his stuffed toys and will even take them with him on his walks. He's a huge sweetheart and is very social.",
+      "intakeDate":"2023-05-06T00:00:00.0z",
+      "photoURL":"/images/adopt-list-dog/caper.jpg"
+    },
+    {
+      "id":11,
+      "name":"Banjo",
+      "age":"3 years, 3 months",
+      "gender":"F",
+      "personality": "Banjo loves people and is amazingly sweet and affectionate! She spent a while in a foster home, and she is really good with kids and other animals.",
+      "intakeDate":"2023-03-21T00:00:00.0z",
+      "photoURL":"/images/adopt-list-dog/banjo.jpg"
+    },
+    {
+      "id":12,
+      "name":"Fern",
+      "age":"1 year, 11 months",
+      "gender":"F",
+      "personality": "Fern is a very adventurous girl who is loads of fun. She is very active, and would be an excellent addition to a home that enjoys things like hiking or running.",
+      "intakeDate":"2023-05-14T00:00:00.0z",
+      "photoURL":"/images/adopt-list-dog/fern.jpg"
+    }
+  ],
+  "cats":[
+    {
+      "id":13,
+      "name":"Felix",
+      "age":"6 years, 9 months",
+      "gender":"M",
+      "personality": "Felix is such a beautiful cat. He is very relaxed and friendly, and really enjoys getting pet.",
+      "intakeDate":"2022-09-05T00:00:00.0z",
+      "photoURL":"/images/adopt-list-cat/felix.jpg"
+    },
+    {
+      "id":14,
+      "name":"Annabelle",
+      "age":"2 years, 1 months",
+      "gender":"F",
+      "personality": "Annabelle is a sweet, independent lady who absolutely loves to play. She's not a lap cat, but she loves to be pet, especially in the spot just in front of her ears.",
+      "intakeDate":"2022-03-15T00:00:00.0z",
+      "photoURL":"/images/adopt-list-cat/annabelle.jpg"
+    },
+    {
+      "id":15,
+      "name":"Mr. Mittens",
+      "age":"3 years, 9 months",
+      "gender":"M",
+      "personality": "Mr. Mittens is an incredibly resilient boy who was rescued after being hit by a car. His tail had to be amputated, but he made a full recovery, and has a wise, loving demeanor.",
+      "intakeDate":"2022-09-12T00:00:00.0z",
+      "photoURL":"/images/adopt-list-cat/mittens.jpg"
+    },
+    {
+      "id":16,
+      "name":"Leo",
+      "age":"8 years, 6 months",
+      "gender":"M",
+      "personality": "Leo is a funny, sassy cat who will be your best friend once he gets to know someone. While he used to hiss occassionaly, he never showed any real aggression, and with a little patience, he will be a truly loyal companion.",
+      "intakeDate":"2022-11-20T00:00:00.0z",
+      "photoURL":"/images/adopt-list-cat/leo.jpg"
+    },
+    {
+      "id":17,
+      "name":"Holly",
+      "age":"7 years",
+      "gender":"F",
+      "personality": "Holly absolutely adores attention and loves being brushed and pet. She is super affectionate and loving, and will be a perfect fit for anyone who wants to snuggle!",
+      "intakeDate":"2022-12-23T00:00:00.0z",
+      "photoURL":"/images/adopt-list-cat/holly.jpg"
+    },
+    {
+      "id":18,
+      "name":"Ginger",
+      "age":"5 years, 1 month",
+      "gender":"F",
+      "personality": "Ginger is a very calm and independent cat who will be an easygoing companion. He loves quiet moments of relaxation where he can curl up in his favorite spots.",
+      "intakeDate":"2023-02-11T00:00:00.0z",
+      "photoURL":"/images/adopt-list-cat/ginger.jpg"
+    },
+    {
+      "id":19,
+      "name":"Ollie",
+      "age":"8 years, 4 months",
+      "gender":"M",
+      "personality": "Ollie is a distinguished, calm little gentleman. He is very well-behaved. He may take a bit to truly warm up to new people, but loves spending quiet time together with people he knows.",
+      "intakeDate":"2022-11-06T00:00:00.0z",
+      "photoURL":"/images/adopt-list-cat/ollie.jpg"
+    },
+    {
+      "id":20,
+      "name":"Kiwi",
+      "age":"7 years, 6 months",
+      "gender":"F",
+      "personality": "Kiwi is a spunky, curious gal who is very adaptable and who adjusts surprisingly quickly to new people and situations! She is a ton of fun, and loves to play.",
+      "intakeDate":"2023-27-03T00:00:00.0z",
+      "photoURL":"/images/adopt-list-cat/kiwi.jpg"
+    },
+    {
+      "id":21,
+      "name":"Cookie",
+      "age":"8 years, 1 months",
+      "gender":"F",
+      "personality": "Cookie is the cuddliest cat ever, and she loves pets and attention from her human companions. She is a great lap cat and loves to cuddle!",
+      "intakeDate":"2023-16-22T00:00:00.0z",
+      "photoURL":"/images/adopt-list-cat/cookie.jpg"
+    },
+    {
+      "id":22,
+      "name":"Athena",
+      "age":"1 year, 8 months",
+      "gender":"F",
+      "personality": "Athena is a sweet, gorgeous girl who was rescued along with her brother, Apollo. The two of them are bonded closely, and so we are requesting that they be adopted together.",
+      "intakeDate":"2023-03-04T00:00:00.0z",
+      "photoURL":"/images/adopt-list-cat/athena.jpg"
+    },
+    {
+      "id":23,
+      "name":"Apollo",
+      "age":"1 year, 8 months",
+      "gender":"M",
+      "personality": "Apollo is an adventurous, energetic boy who was rescued with his sister, Athena. The two of them are very attached to each other, so we are requesting that they be adopted together.",
+      "intakeDate":"2023-03-04T00:00:00.0z",
+      "photoURL":"/images/adopt-list-cat/apollo.jpg"
+    },
+    {
+      "id":24,
+      "name":"Lucky",
+      "age":"8 years, 3 months",
+      "gender":"M",
+      "personality": "Lucky charmed the entire staff from the moment he arrived. He is very affectionate and laid back, and warms up quickly to new people.",
+      "intakeDate":"2023-05-14T00:00:00.0z",
+      "photoURL":"/images/adopt-list-cat/lucky.jpg"
+    },
+    {
+      "id":25,
+      "name":"Dusky",
+      "age":"9 months",
+      "gender":"M",
+      "personality": "Dusky has a heart of gold and is very easygoing. He is not picky with his food, and is sure to steal your heart with his playful antics!",
+      "intakeDate":"2023-06-19T00:00:00.0z",
+      "photoURL":"/images/adopt-list-cat/dusky.jpg"
+    }
+  ],
+  "other":{
+    "rabbits":[
+      {
+        "id":26,
+        "category": "Rabbit",
+        "name":"Cabbage",
+        "age":"4 years, 2 months",
+        "gender":"M",
+        "personality": "Cabbage is a bundle of adorable furry energy. He is very curious and likes to hop and climb. He's very silly and very sweet!",
+        "intakeDate":"2022-11-01T00:00:00.0z",
+        "photoURL":"/images/adopt-list-other/cabbage.jpg"
+      },
+      {
+        "id":27,
+        "category": "Rabbit",
+        "name":"Stella",
+        "age":"1 year, 1 month",
+        "gender":"F",
+        "personality": "Stella is a gorgeous, fluffy beauty. She's a bit timid, so it will take a patient, gentle touch to bring her out of her shell.",
+        "intakeDate":"2023-02-26T00:00:00.0z",
+        "photoURL":"/images/adopt-list-other/stella.jpg"
+      },
+      {
+        "id":28,
+        "category": "Rabbit",
+        "name":"Clover",
+        "age":"2 years, 8 months",
+        "gender":"M",
+        "personality": "Clover is a gentle, loving soul who is very affectionate with people she trusts. She hasn't had the best experience with young kids, so she will do best in a home without children around.",
+        "intakeDate":"2023-05-03T00:00:00.0z",
+        "photoURL":"/images/adopt-list-other/clover.jpg"
+      }
+    ],
+    "reptiles":[
+      {
+        "id":29,
+        "category": "Reptile",
+        "name":"Lizzy",
+        "age":"8 years, 2 months",
+        "gender":"F",
+        "personality": "Lizzy is very bright, outgoing girl. She likes to socialize, and will do best in a home where she gets a chance to be handled every day. ",
+        "intakeDate":"2021-10-17T00:00:00.0z",
+        "photoURL":"/images/adopt-list-other/lizzy.jpg"
+      },
+      {
+        "id":30,
+        "category": "Reptile",
+        "name":"Albert",
+        "age":"2 years, 5 months",
+        "gender":"M",
+        "personality": "Albert is a calm, sleepy boy and tends to be a little bit shy. He is very content to hang out in his cage and be a simple, quiet companion.",
+        "intakeDate":"2022-02-26T00:00:00.0z",
+        "photoURL":"/images/adopt-list-other/albert.jpg"
+      }
+    ],
+    "rodents":[
+      {
+        "id":31,
+        "category": "Rodent",
+        "name":"Madame Marbles",
+        "age":"1 year, 2 months",
+        "gender":"M",
+        "personality": "Madame Marbles is a bright, inquisivie animal who loves to play with her sister, Pixel, and their toys. Company is very important for guinea pigs, so we require that the two of them are adopted together.",
+        "intakeDate":"2023-03-25T00:00:00.0z",
+        "photoURL":"/images/adopt-list-other/marbles.jpg"
+      },
+      {
+        "id":32,
+        "category": "Rodent",
+        "name":"Pixel",
+        "age":"1 year, 2 months",
+        "gender":"F",
+        "personality": "Pixel is beautiful girl, and a very active guinea pig! She loves to exercise and play. Socialization is very important for guinea pigs, so we are requiring that she is adopted together with her sister, Madame Marbles.",
+        "intakeDate":"2023-03-25T00:00:00.0z",
+        "photoURL":"/images/adopt-list-other/pixel.jpg"
+      }
+    ],
+    "birds":[
+      {
+        "id":33,
+        "category": "Bird",
+        "name":"Storm",
+        "age":"23 years, 11 months",
+        "gender":"M",
+        "personality": "Storm is incredibly intelligent, and he loves to spend time with people! One of his favorite things to do is \"dance\" with our staff and volunteers. He will do best in an environment where he can get lots of love and attention.",
+        "intakeDate":"2022-11-25T00:00:00.0z",
+        "photoURL":"/images/adopt-list-other/storm.jpg"
+      }
+    ]
+  }
+}
