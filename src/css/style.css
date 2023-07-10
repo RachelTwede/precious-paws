@@ -365,6 +365,15 @@ header h1 {
 .care-general a:visited {
   color: var(--used-dark-link-color);
 }
+#cat-fact, #dog-fact {
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  box-shadow: 3px 7px 5px var(--shadow);
+}
+#cat-fact p, #dog-fact p {
+  margin-top: 0;
+}
 /* End Animal Care Page Styles */
 
 /* Visit Us Page Styles */
@@ -448,12 +457,6 @@ form .button {
     width: 80%;
     margin: 0 auto;
   } 
-  section figure {
-    width: 400px;
-  }
-  figure img {
-    width: 100%;
-  }
   .img-container h1 {
     width: auto;
     min-width: 400px;
@@ -468,6 +471,7 @@ form .button {
   /* Home Styles*/
   .home-basic-info, .about-visit {
     padding: 1rem 2rem;
+    border-radius: 6px;
   }
   .tall-img {
     display: none;
@@ -484,6 +488,12 @@ form .button {
   }
   .adopt-grid img {
     margin: 0;
+    width: 100%;
+  }
+  section figure {
+    width: 418px;
+  }
+  figure img {
     width: 100%;
   }
 
@@ -596,6 +606,81 @@ form .button {
     width: 100%;
   }
   /* End Home */
+
+  /* About Page Styles*/
+  .about-mission h2 {
+    margin-top: 1.5rem;
+  }
+  .about-mission div img {
+    float: left;
+    margin: 0;
+    width: 450px;
+    margin-bottom: 2.5rem;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+  }
+  .about-visit div {
+    display: grid;
+    grid-template-columns: max-content auto;
+    column-gap: 2rem;
+  }
+  .about-visit h2 {
+    grid-column: 1 / 2;
+  }
+  .about-visit figure {
+    grid-column: 1 / 2;
+    grid-row: 2 / 10;
+    margin-bottom: 1rem;
+  }
+  .about-visit h3:first-of-type {
+    grid-row: 2 / 3;
+    margin-top: 0;
+  }
+  .about-visit p {
+    grid-column: 2 / 3;
+    margin-top: 0;
+  }
+  .about-visit p:nth-of-type(1) {
+    grid-row: 3 / 4;
+  }
+  .about-visit p:nth-of-type(2) {
+    grid-row: 4 / 5;
+  }
+  .about-visit p:nth-of-type(3) {
+    grid-row: 5 / 6;
+  }
+  .about-visit h3:last-of-type {
+    grid-row: 6 / 7;
+    margin-top: 1.5rem;
+  }
+  .about-visit p:nth-of-type(4) {
+    grid-row: 7 / 8;
+  }
+  .about-visit p:nth-of-type(5) {
+    grid-row: 8 / 9;
+  }
+
+  .about-adoptions-link {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+  .about-adoptions-link>div {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 7px 5px var(--shadow);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .about-adoptions-link h2, .about-adoptions-link p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .about-adoptions-link p {
+    margin-bottom: 1.5rem;
+  }
 
   /* Adopt Page Styles*/
   .adopt-grid {
