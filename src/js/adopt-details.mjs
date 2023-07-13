@@ -22,6 +22,12 @@ function adoptIntroTemplate(headingData) {
 }
 
 function animalListTemplate(animal) {
+  let favoritesList = readFromLocalStorage("precious-paws-animals") || [];
+  if (!Array.isArray(favoritesList)) {
+    favoritesList = [favoritesList];
+  }
+  let isOnList = favoritesList.includes(animal.id.toString());
+
   let htmlString = `<div class="adopt-card">`;
   htmlString += `<img src="${animal.photoURL}">`;
   htmlString += `<h2>${animal.name}</h2>`;
@@ -30,9 +36,24 @@ function animalListTemplate(animal) {
   }
   htmlString +=  `<p>Age: ${animal.age}</p>`;
   htmlString +=  `<p>Gender: ${animal.gender}</p>`;
-  htmlString += `<button id="${animal.id}">Save for Visit</button>`;
+  htmlString += `<button id="${animal.id}"`;
+  if(isOnList) {
+    htmlString += `class="saved"`;
+    htmlString += `>Remove</button>`;
+  } else {
+    htmlString += `>Save for Visit</button>`;
+  }
   htmlString += "</div>";
   return htmlString;
+}
+
+//FIXME: gotta change this to use localstorage so it won't reset on page reload
+function swapText(element) {
+  if (element.classList.contains("saved")) {
+    element.innerHTML = "Remove";
+  } else {
+    element.innerHTML = "Save for Visit";
+  }
 }
 
 function saveFavorite(e) {
@@ -46,15 +67,20 @@ function saveFavorite(e) {
     favoritesList.push(favoriteID);
   } else if(!favoritesList) {
     favoritesList = [favoriteID];
+  } else {
+    let index = favoritesList.indexOf(favoriteID);
+    favoritesList.splice(index, 1);
   }
   saveToLocalStorage("precious-paws-animals", favoritesList);
+  e.target.classList.toggle("saved");
+  swapText(e.target);
 }
 
 function setFavoriteButtonListener() {
   const buttons = document.querySelectorAll(".adopt-card button");
   Array.from(buttons).map((button) => {
     button.addEventListener("click", saveFavorite);
-  })
+  });
 }
 
 // The main function for the page

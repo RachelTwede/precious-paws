@@ -46,6 +46,12 @@ function setMenuListener() {
       overlayElement.classList.toggle("darken");
     }
   });
+  overlayElement.addEventListener("click", function() {
+    let menuButton = document.querySelector("#menu-button");
+    navElement.classList.toggle("visible");
+    menuButton.classList.toggle("change");
+    overlayElement.classList.toggle("darken");
+  });
 }
 
 export async function addHeaderNavFooter() {
