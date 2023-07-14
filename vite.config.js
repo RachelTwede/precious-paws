@@ -12,7 +12,7 @@ export default defineConfig({
         about: resolve(__dirname, "src/about/index.html"),
         adopt: resolve(__dirname, "src/adopt/index.html"),
         care: resolve(__dirname, "src/care/index.html"),
-        visit: resolve(__dirname, "src/visit/index.html")
+        visit: resolve(__dirname, "src/visit/index.html"),
       },
     },
   },
