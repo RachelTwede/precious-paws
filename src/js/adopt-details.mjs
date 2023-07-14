@@ -1,4 +1,4 @@
-import { renderWithTemplate, renderListWithTemplate, loadSnippet, saveToLocalStorage, readFromLocalStorage } from "/js/utilities.mjs";
+import { renderWithTemplate, renderListWithTemplate, loadPartial, saveToLocalStorage, readFromLocalStorage } from "/js/utilities.mjs";
 import { getAnimalListJSON } from "./model.mjs";
 
 function adoptIntroTemplate(headingData) {
@@ -65,7 +65,7 @@ export async function buildAdoptPage(urlParameter) {
 
   // Set page content if no animal is selected
   if(!urlParameter) {
-    const adoptFn = loadSnippet("/snippets/adopt-main.html");
+    const adoptFn = loadPartial("/partials/adopt-main.html");
     renderWithTemplate(adoptFn, listElement);
   //Set page content for "other" category
   } else if(urlParameter == "other") {

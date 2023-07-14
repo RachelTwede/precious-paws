@@ -6,7 +6,7 @@ export function getURLParam(param) {
 
 //why not just write the async function as the function itself?
 //why do we need to "return" it?
-export function loadSnippet(path) {
+export function loadPartial(path) {
   return async function() {
     const response = await fetch(path);
     if (response.ok) {
@@ -53,9 +53,9 @@ export async function addHeaderNavFooter() {
   const navElement = document.querySelector(".nav");
   const footerElement = document.querySelector("footer");
 
-  const headerFn = loadSnippet("/snippets/header.html");
-  const navFn = loadSnippet("/snippets/nav.html");
-  const footerFn = loadSnippet("/snippets/footer.html");
+  const headerFn = loadPartial("/partials/header.html");
+  const navFn = loadPartial("/partials/nav.html");
+  const footerFn = loadPartial("/partials/footer.html");
 
   renderWithTemplate(headerFn, headerElement);
   renderWithTemplate(navFn, navElement);
