@@ -108,6 +108,7 @@ button, .button {
   position: relative;
   box-shadow: 0 3px 4px 4px var(--shadow);
   text-decoration: none;
+  transition: 0.05s ease;
 }
 .button:visited {
   color: var(--near-black);
