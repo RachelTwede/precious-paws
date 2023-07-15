@@ -445,6 +445,13 @@ form .button {
   width: 70%;
   text-align: center;
 }
+
+/************************FOR TESTING PURPOSES******************************/
+input:valid {
+  background-color: green;
+}
+/************************FOR TESTING PURPOSES******************************/
+
 /* End Visit Us Page Styles */
 
 

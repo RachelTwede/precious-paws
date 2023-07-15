@@ -14,6 +14,23 @@ function favoritesTemplate(animal) {
   return htmlString;
 }
 
+function validateDateInput() {
+  var today = new Date();
+
+  var month = today.getMonth() + 1;
+  var day = today.getDate();
+  var year = today.getFullYear();
+
+  if(month < 10)
+    month = '0' + month.toString();
+  if(day < 10)
+    day = '0' + day.toString();
+  var minDate = year + "-" + month + "-" + day;    
+
+  var dateInput = document.querySelector("#date");
+  dateInput.setAttribute("min", minDate); 
+}
+
 export async function buildVisitPage() {
   const parentElement = document.querySelector(".your-choices");
   const favoriteIDs = readFromLocalStorage("precious-paws-animals");
@@ -28,8 +45,10 @@ export async function buildVisitPage() {
     }
   }
 
+  validateDateInput();
+}
 
-  // .map, .find, etc, take a single function as an argument.
+// .map, .find, etc, take a single function as an argument.
   // The function they take as an argument has a single argument.
   // .map will call the function for every item in the array .map is being called on,
   // passing in the current item as the callback's argument.
@@ -37,5 +56,3 @@ export async function buildVisitPage() {
   //   const animal = animalsArray.find((a) => a.id == favoriteIDs[i]);
   //   renderWithTemplate(favoritesTemplate, parentElement, animal, null, "beforeend", false);
   // }
-
-}
