@@ -378,13 +378,17 @@ header h1 {
 /* End Animal Care Page Styles */
 
 /* Visit Us Page Styles */
+.visit-form>div {
+  margin: 0;
+}
 fieldset {
   background-color: var(--tertiary-color);
-  border: none;
   color: white;
-  border-radius: 6px;
+  border: none;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 legend {
   background-color: #1c2333;
@@ -398,9 +402,12 @@ input {
   margin-bottom: 0.5rem;
   border-radius: 4px;
   padding: 0.25rem;
+  max-width: 500px;
+  display: block;
 }
 input[type="radio"] {
   width: auto;
+  display: inline;
 }
 .form-instructions {
   color: var(--tertiary-color);
@@ -409,11 +416,12 @@ input[type="radio"] {
 
 .your-choices {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0.5rem;;
   padding: 0.5rem;
   padding-bottom: 1.5rem;
   color: var(--near-black);
+  justify-items: center;
 }
 .your-choices img {
   border-radius: 6px;
@@ -423,6 +431,7 @@ input[type="radio"] {
   background-color: white;
   padding: 0.5rem;
   border-radius: 6px;
+  max-width: 400px;
 }
 .your-choices legend {
   color: white;
@@ -437,15 +446,17 @@ input[type="radio"] {
 
 .your-visit {
   text-align: center;
+  background-color: var(--tertiary-color);
+  color: white;
+  padding: 1rem 0.75rem;
 }
 form .button {
   background-color: var(--secondary-color);
-  margin: 0 auto;
+  margin: 1.5rem auto 0.5rem auto;
   display: block;
   width: 70%;
   text-align: center;
 }
-
 /************************FOR TESTING PURPOSES******************************/
 input:valid {
   background-color: green;
@@ -509,6 +520,24 @@ input:valid {
   .care-general {
     padding: 1.5rem;
     padding: 1.5rem;
+  }
+
+  /* Visit Page Styles */
+  .visit-form>div {
+    margin: 1.5rem 1rem;
+  }
+  fieldset {
+    border-radius: 6px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .your-choices {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+  .your-visit {
+    border-radius: 6px;
   }
 
   /* Footer */
@@ -695,4 +724,9 @@ input:valid {
     grid-template-columns: 1fr 1fr 1fr;
   }
   /* End Adopt Page */
+
+  /* Visit Page Styles */
+  .your-choices {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
