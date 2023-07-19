@@ -10,6 +10,7 @@ function favoritesTemplate(animal) {
   }
   htmlString +=  `<p>Age: ${animal.age}</p>`;
   htmlString +=  `<p>Gender: ${animal.gender}</p>`;
+  htmlString += `<a class="button" id="${animal.id}">Remove</a>`;
   htmlString += `</div>`;
   return htmlString;
 }
@@ -31,6 +32,25 @@ function validateDateInput() {
   dateInput.setAttribute("min", minDate); 
 }
 
+function removeFavorite() {
+  let favoriteID = e.target.id;
+  let favoritesList = readFromLocalStorage("precious-paws-animals") || [];
+
+  let index = favoritesList.indexOf(favoriteID);
+  favoritesList.splice(index, 1);
+  saveToLocalStorage("precious-paws-animals", favoritesList);
+  buildVisitPage();
+}
+
+function setFavoriteButtonListener() {
+  //FIXME: NEEDS TO USE EVENT DELEGATION. SET THE QUERYSELECTOR ON PARENT ELEMENT.
+  // https://stackoverflow.com/questions/66725863/use-queryselectorall-on-dynamically-added-element
+  const buttons = document.querySelectorAll(".your-choices .button");
+  Array.from(buttons).map((button) => {
+    button.addEventListener("click", removeFavorite);
+  });
+}
+
 export async function buildVisitPage() {
   const parentElement = document.querySelector(".your-choices");
   const favoriteIDs = readFromLocalStorage("precious-paws-animals");
@@ -46,6 +66,7 @@ export async function buildVisitPage() {
   }
 
   validateDateInput();
+  setFavoriteButtonListener();
 }
 
 // .map, .find, etc, take a single function as an argument.

@@ -47,7 +47,6 @@ function animalListTemplate(animal) {
   return htmlString;
 }
 
-//FIXME: gotta change this to use localstorage so it won't reset on page reload
 function swapText(element) {
   if (element.classList.contains("saved")) {
     element.innerHTML = "Remove";
